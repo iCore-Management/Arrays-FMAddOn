@@ -1,3 +1,5 @@
+[iCore Management](https://icoremanagement.com)
+
 # Arrays -AddOn
 
 Arrays is a suite of 30+ custom functions that bring javascript array methods to FileMaker using native functionality without external dependencies.
