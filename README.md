@@ -28,7 +28,7 @@ Arrays is a suite of 30+ custom functions that bring javascript array methods to
 | ~array.push( values ) | Adds new elements to the end of ~array, and returns the new length |
 | ~array.reduce( function ; initialValue ) | Reduce the values of ~array to a single value (going left-to-right) |
 | ~array.reduceRight( function ; initialValue ) | Reduce the values of ~array to a single value (going right-to-left) |
-| ~array.reverse | Reverses the order of the elements in ~array. Sets ~array |
+| ~array.reverse | Reverses the order of the elements in ~array. Changes ~array |
 | ~array.shift | Removes the first element of ~array, and returns that element. Changes ~array |
 | ~array.slice( start ; end ) | Selects a part of ~array, and returns the new array. Does not change ~array |
 | ~array.some( function ) | Checks if every element in ~array passes a test |
@@ -38,3 +38,19 @@ Arrays is a suite of 30+ custom functions that bring javascript array methods to
 | ~array.unshift( value ) | Adds new elements to the beginning of ~array, and returns the new length |
 | ~array.valueOf( array ) | Returns the primitive value of an array. Sets ~array |
 | ~array.length( array ) | Return the length of array |
+
+## Installation
+
+Once the Add-On is dragged onto the layout, the custom functions will be added for use.
+
+## Usage
+
+These functions work by setting and manipulating a local variable, $~array.  $~array can be set by calling ~array.valueOf ( array ), and passing the array value to set, or calling ~array.from ( values ) and passing a list of values.  Once set, $~array can be returned by using the getter function, ~array.
+
+To send a function as a parameter, the function must be quoted text. The text function will then be evaulated inside the ~array function. A number of internal variuables can be used within the quoted function and are substituted in before evaulation.
+
+			[value]		replaced with array value during run time
+			[index]		replaced with array index during run time
+			[array]		replaced with array during run time
+			[total]		replaced with result value during run time
+
