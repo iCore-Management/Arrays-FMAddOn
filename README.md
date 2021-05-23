@@ -47,7 +47,7 @@ Arrays is a suite of 30+ custom functions that bring javascript array methods to
 
    Mac: ~/Library/Application Support/FileMaker/Extensions/AddonModules
    
-   Win: ~AppData\\Local\\FileMaker\\Extensions\\AddonModules
+   Win: ~\\AppData\\Local\\FileMaker\\Extensions\\AddonModules
 
 You can then install it from the Add-Ons tab in FileMaker from Layout Mode.
 
