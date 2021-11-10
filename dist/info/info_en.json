@@ -1,0 +1,19 @@
+﻿{
+	"Title" : "Arrays",
+
+	"Description" : "Arrays is a set of custom functions for working with JSON arrays.  Using native FileMaker calculations, these custom functions extend the capabailities of working with JSON arrays in your solution.",
+
+	"Category" : "iCore",
+
+	"Features" :
+		[
+			"Set of 32 custom functions for working with arrays",
+			"Includes splice, sort, reverse, pop, push, and more..."
+		],
+
+	"Optimized" :
+		[
+			"Desktop", "Tablet", "Mobile"
+
+		]
+}
