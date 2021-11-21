@@ -1,0 +1,25 @@
+/********** HEADER **********
+	PURPOSE: Return the current value of ~array
+	PARAMETER:
+
+	RESULT:
+		result (array)		~array or "[]" if not set
+
+	ERROR:
+
+	VERSION: 1.0
+		5/03/2021		iCore Management	CREATED
+
+	NOTES: Does change ~array.
+
+ ********** HEADER **********/
+
+Let ([
+
+	_array = $~array
+
+];
+
+	Case ( GetAsBoolean ( Left ( JSONFormatElements ( _array ); 1 ) = "[" ); _array; "[]" ) 
+
+)
